@@ -30,9 +30,7 @@ a:hover {
   margin-right: 10px; /* Add margin between the navbar links */
 }
 
-.appointment-btn {
-  margin-left: 10px; /* Add margin between "Sign in" and "Sign up" buttons */
-}
+
 
 
 /* Home Section styles */
@@ -48,14 +46,7 @@ a:hover {
   position: relative;
 }
 
-#home h1 {
-  margin: 0;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 56px;
-  text-transform: uppercase;
-  color: #2c4964;
-}
+
 
 #home h4 {
   color: #2c4964;
@@ -129,38 +120,6 @@ a:hover {
 .doctors .member p {
   margin: 10px 0 0 0;
   font-size: 14px;
-}
-
-.doctors .member .social {
-  margin-top: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-/* .doctors .member .social a {
-  transition: ease-in-out 0.3s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50px;
-  width: 32px;
-  height: 32px;
-  background: #4500FF;
-}
-
-.doctors .member .social a i {
-  color: #fff;
-  font-size: 16px;
-  margin: 0 2px;
-} */
-
-.doctors .member .social a:hover {
-  background: #3fbbc0;
-}
-
-.doctors .member .social a + a {
-  margin-left: 8px;
 }
 
 /* Custom styles */
