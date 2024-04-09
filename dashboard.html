@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Patient Dashboard</title>
+
+    <!-- Open Sans Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <!-- Header -->
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="header-left">
+          <span class="material-icons-outlined">search</span>
+        </div>
+        <div class="header-right">
+          <span class="material-icons-outlined">notifications</span>
+          <span class="material-icons-outlined">email</span>
+          <span class="material-icons-outlined">account_circle</span>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand">
+            <img src="images/logo/image.png" alt="">
+          </div>
+          <span class="material-icons-outlined" onclick="closeSidebar()"
+            >close</span
+          >
+        </div>
+
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item">
+            <a href="#">
+              <span class="material-icons-outlined">dashboard</span> Dashboard
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#">
+              <span class="material-icons-outlined">leaderboard</span>
+              View Reports
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="appoinment_remainder.html">
+              <span class="material-icons-outlined">forum</span> Appointments
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#">
+              <span class="material-icons-outlined">phone</span> Summary
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#">
+              <span class="material-icons-outlined">email</span> Resources
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#">
+              <span class="material-icons-outlined">settings</span> Settings
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" class="logout" id="xdx">
+              <i class='bx bxs-log-out-circle'></i>
+              <span class="text">Logout</span>
+            </a>
+          </li>
+          
+        </ul>
+      </aside>
+      <!-- End Sidebar -->
+
+      <!-- Main -->
+      <main class="main-container">
+        <div class="main-title">
+          <h2>DASHBOARD</h2>
+        </div>
+
+        <div class="main-cards">
+          <div class="card">
+            <div class="card-inner">
+              <h2>Health Score:</h2>
+              <span class="material-icons-outlined">thumb_up</span>
+            </div>
+            <h1>81</h1>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h2>Medication</h2>
+              <span class="material-icons-outlined">medical_services</span>
+            </div>
+            <h1>07</h1>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h2>Reports</h2>
+              <span class="material-icons-outlined">description</span>
+            </div>
+            <h1>21</h1>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h2>Checkup</h2>
+              <span class="material-icons-outlined">forum</span>
+            </div>
+            <h1>06</h1>
+          </div>
+        </div>
+
+        <div class="products">
+          <div class="container">
+            <h2>Schedule an Appointment</h2>
+            <form class="appointment-form">
+              <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required />
+              </div>
+              <div class="form-group">
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required />
+              </div>
+              <div class="form-group">
+                <label for="symptoms">Symptoms:</label>
+                <textarea id="symptoms" name="symptoms" required></textarea>
+              </div>
+              <div class="form-group">
+                <label for="contact">Contact:</label>
+                <input type="tel" id="contact" name="contact" required />
+              </div>
+              <div class="form-group">
+                <button type="submit">Schedule</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="calendar">
+            <div class="calendar-header">Calendar</div>
+            <div class="calendar-body">
+              <div class="month">April 2024</div>
+              <div class="days">
+                <div class="day">Sun</div>
+                <div class="day">Mon</div>
+                <div class="day">Tue</div>
+                <div class="day">Wed</div>
+                <div class="day">Thu</div>
+                <div class="day">Fri</div>
+                <div class="day">Sat</div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day">1</div>
+                <div class="day">2</div>
+                <div class="day">3</div>
+                <div class="day">4</div>
+                <div class="day">5</div>
+                <div class="day">6</div>
+                <div class="day">7</div>
+                <div class="day">8</div>
+                <div class="day">9</div>
+                <div class="day">10</div>
+                <div class="day">11</div>
+                <div class="day">12</div>
+                <div class="day">13</div>
+                <div class="day">14</div>
+                <div class="day">15</div>
+                <div class="day">16</div>
+                <div class="day">17</div>
+                <div class="day">18</div>
+                <div class="day">19</div>
+                <div class="day">20</div>
+                <div class="day">21</div>
+                <div class="day">22</div>
+                <div class="day">23</div>
+                <div class="day">24</div>
+                <div class="day">25</div>
+                <div class="day">26</div>
+                <div class="day">27</div>
+                <div class="day">28</div>
+                <div class="day">29</div>
+                <div class="day">30</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <h2 class="product-description">Appointment Reminder</h2>
+            <p class="text-secondary">
+              Your upcoming appointment with Dr. Smith is on April 10th at 10:00
+              AM.
+            </p>
+            <button type="button" class="product-button">
+              <span class="material-icons-outlined">event_available</span>
+              Confirm
+            </button>
+            <button type="button" class="product-button">
+              <span class="material-icons-outlined">event_busy</span>
+              Deny
+            </button>
+          </div>
+
+          <div class="social-media">
+            <div class="product">
+              <div>
+                <div class="product-icon background-red">
+                  <i class="bi bi-person-circle"></i>
+                </div>
+                <h1 class="text-red">Profile</h1>
+                <p class="text-secondary">
+                  View and manage your profile information.
+                </p>
+              </div>
+
+              <div>
+                <div class="product-icon background-green">
+                  <i class="bi bi-calendar"></i>
+                </div>
+                <h1 class="text-green">Appointments</h1>
+                <p class="text-secondary">
+                  Schedule, view, or cancel upcoming appointments.
+                </p>
+              </div>
+
+              <div>
+                <div class="product-icon background-orange">
+                  <i class="bi bi-file-earmark-medical"></i>
+                </div>
+                <h1 class="text-orange">Medical Records</h1>
+                <p class="text-secondary">
+                  Access and manage your medical records and history.
+                </p>
+              </div>
+
+              <div>
+                <div class="product-icon background-blue">
+                  <i class="bi bi-chat-left-dots"></i>
+                </div>
+                <h1 class="text-blue">Messages</h1>
+                <p class="text-secondary">
+                  View and reply to messages from your healthcare provider.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+
+          <!-- MAIN -->
+          <section id="content">
+
+          <main id="mus">
+
+              <div class="order">
+                <div class="head">
+                  <h3>Reports</h3>
+                  <i class="bx bx-search"></i>
+                  <i class="bx bx-filter"></i>
+                </div>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>User</th>
+                      <th>Date Order</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img src="images/image/people.png" />
+                        <p>John Doe</p>
+                      </td>
+                      <td>01-10-2021</td>
+                      <td><span class="statusc">Completed</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="images/image/people.png" />
+                        <p>John Doe</p>
+                      </td>
+                      <td>01-10-2021</td>
+                      <td><span class="statuspe">Pending</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="images/image/people.png" />
+                        <p>John Doe</p>
+                      </td>
+                      <td>01-10-2021</td>
+                      <td><span class="statuspr">Process</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="images/image/people.png"/>
+                        <p>John Doe</p>
+                      </td>
+                      <td>01-10-2021</td>
+                      <td><span class="statuspe">Pending</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="images/image/people.png" />
+                        <p>John Doe</p>
+                      </td>
+                      <td>01-10-2021</td>
+                      <td><span class="statusc">Completed</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              
+          </main>
+          </section>
+          <!-- MAIN -->
+        
+      <!-- End Main -->
+
+      <!-- faq -->
+
+
+      
+  <div class="accordion">
+    <h2>FAQ</h2>
+    <div class="accordion-item active">
+      <div class="accordion-title">Question 1: What is Lorem Ipsum?</div>
+      <div class="accordion-content">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-title">Question 2: Why do we use it?</div>
+      <div class="accordion-content">
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-title">Question 2: Why do we use it?</div>
+      <div class="accordion-content">
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-title">Question 2: Why do we use it?</div>
+      <div class="accordion-content">
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-title">Question 3: Where does it come from?</div>
+      <div class="accordion-content">
+        <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+      </div>
+    </div>
+  </div>
+
+
+  </body>
+</html>

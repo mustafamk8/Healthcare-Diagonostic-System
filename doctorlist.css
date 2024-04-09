@@ -1,0 +1,40 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #444;
+    margin: 0;
+    padding: 0;
+}  
+h1{
+    font-style: italic;
+    color: #4200FF;
+    align-items: center;
+}
+#doctor-directory {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+.doctor-profile {
+    /* border: 1px solid #ccc; */
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.doctor-profile img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.main-img img{
+    width: 100%;
+    margin-bottom: 2%;
+}
+.doctor-profile:hover {
+    transform: scale(1.05); /* Enlarge the box on hover */
+    box-shadow: 0 4px 8px #4200FF; /* Add a subtle shadow */
+    cursor: pointer; /* Change cursor to indicate interactivity */
+}
+.text-center{
+    margin-top: 3%;
+    margin-bottom: 5%;
+}

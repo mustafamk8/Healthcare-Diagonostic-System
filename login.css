@@ -1,0 +1,38 @@
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.loginform {
+    border: 5px solid #4200FF;
+    border-radius: 10px;
+    text-align: left;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.social-media ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.existing-account {
+    margin-top: 20px;
+}
+
+.existing-account a {
+    color: #4200FF;
+}
