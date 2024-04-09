@@ -368,3 +368,16 @@ button{
 .title{
   text-align:center
 }
+
+/* terms and condition */
+.termbody {
+  font-family: "Open Sans", sans-serif;
+  color: #444;
+  margin: 5px 10px 20px 20px;
+  background-color: white;
+  }
+  .term{
+      margin-left:10%;
+      margin-right: 10%;
+      text-align: center;
+  }
